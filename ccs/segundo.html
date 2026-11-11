@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo de ccs</title>
+    <style>
+        ul.menu > li {
+            color:red;
+            font-size: 20px; 
+        }
+            h2 + p{
+                color:green;
+            }
+          input[type="text"]{
+            border: 3px solid red;
+          }
+          .parrafoverde{
+            color: green;
+        }
+        .parrafoverde:hover{
+            font-weight: bold;
+            font-size: 30px;
+            background-image: url(images.jfif);
+            background-size: 10%;
+            background-repeat: no-repeat;
+        }
+       .parraforojo{
+        color: red;
+        }
+       .parraforojo::first-letter {
+        font-size: 2.5em;
+        font-weight: bold;
+        color:blue;
+       }
+       input:focus{
+        border: 5px red dashed;
+       }
+       tr:nth-child(odd){
+        background-color: yellow;
+       }
+       .bloque{
+            width: 900px; 
+            max-width: 900px;
+            height: 80%;
+            border: 4px solid red;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>Primera opcion</li>
+        <ul>
+            <li>Primera subopcion de la primera opcion</li>
+        </ul>
+        <li>Segunda opcion</li>
+    </ul>
+    <p>Mi primer trabajo ccs </p>
+    
+    <h2>Mi segundo trabajo ccs</h2> <!--Este es el unico que sale en verdde-->
+    <p>Este es el segundo trabajo</p>
+    <p>mi tercer parrafo</p>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe aqui tu nombre"/>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" step="5"/>
+        <input type="submit" value="enviar"/>
+
+    </form>
+<p class="parrafoverde">hola no se como he podido vivir sin ccs</p>
+<p class="parraforojo">hola me gusta mucho LM</p>
+
+<table>
+    <tr>
+        <td>1111111</td><td>222222</td><td>3333333</td>    
+    </tr>
+    <tr>
+        <td>4444444</td><td>555555</td><td>6666666</td>    
+    </tr>
+    <tr>
+        <td>77777777</td><td>8888888</td><td>999999</td>    
+    </tr>
+</table>
+<div class="bloque">Alguna cosa
+    <img src="images.jfif" style="margin: 0px auto; display: block;"/>
+</div>
+
+
+
+</body>
+</html>
