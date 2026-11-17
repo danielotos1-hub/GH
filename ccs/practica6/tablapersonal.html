@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Maquetación - Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Contenedor principal gris claro como el de la imagen */
+        .seccion-contenedor {
+            background-color: #e0e0e0;
+            padding: 30px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        /* Tarjeta individual */
+        .tarjeta {
+            color: #ffffff;
+            padding: 25px 15px;
+            border-radius: 4px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-3px);
+        }
+
+        .icono {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-tarjeta {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- TEMA AZUL (Paleta extraída de web de diseño) --- */
+        .tema-azul .tarjeta {
+            background-color: #1976D2; /* Azul Material Design */
+        }
+        .tema-azul {
+            background-color: #E3F2FD; /* Fondo gris-azulado claro */
+        }
+
+        /* --- TEMA VERDE (Paleta extraída de web de diseño) --- */
+        .tema-verde .tarjeta {
+            background-color: #388E3C; /* Verde Material Design */
+        }
+        .tema-verde {
+            background-color: #E8F5E9; /* Fondo gris-verdoso claro */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PRIMERA COPIA: FONDO AZUL -->
+    <h2>Versión con Tonos Azules</h2>
+    <div class="seccion-contenedor tema-azul">
+        <div class="tarjeta">
+            <span class="icono">🏋️‍♂️</span>
+            <span class="titulo-tarjeta">Personal</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">👑</span>
+            <span class="titulo-tarjeta">Exclusivo</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">💃</span>
+            <span class="titulo-tarjeta">Zumba</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🧘‍♂️</span>
+            <span class="titulo-tarjeta">Yoga</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🧖‍♂️</span>
+            <span class="titulo-tarjeta">Sauna</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">⏰</span>
+            <span class="titulo-tarjeta">Abierto 24/7</span>
+        </div>
+    </div>
+
+    <!-- SEGUNDA COPIA: FONDO VERDE -->
+    <h2>Versión con Tonos Verdes</h2>
+    <div class="seccion-contenedor tema-verde">
+        <div class="tarjeta">
+            <span class="icono">🏋️‍♂️</span>
+            <span class="titulo-tarjeta">Personal</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">👑</span>
+            <span class="titulo-tarjeta">Exclusivo</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">💃</span>
+            <span class="titulo-tarjeta">Zumba</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🧘‍♂️</span>
+            <span class="titulo-tarjeta">Yoga</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">🧖‍♂️</span>
+            <span class="titulo-tarjeta">Sauna</span>
+        </div>
+        <div class="tarjeta">
+            <span class="icono">⏰</span>
+            <span class="titulo-tarjeta">Abierto 24/7</span>
+        </div>
+    </div>
+
+</body>
+</html>
